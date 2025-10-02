@@ -1,0 +1,138 @@
+EXTRACTING AREA-WEIGHTED TWSA TIME SERIES
+============================================================
+Extracting area-weighted time series (this may take 1-2 minutes)...
+
+Successfully extracted 238 data points
+
+Data preview:
+        date    twsa_cm        time_ms
+0 2002-04-03  45.296500  1017792000000
+1 2002-05-01  47.999815  1020211200000
+2 2002-07-31  35.585765  1028073600000
+3 2002-08-31  34.748781  1030752000000
+4 2002-09-30  36.249104  1033344000000
+5 2002-10-31  36.255130  1036022400000
+6 2002-11-30  37.215510  1038614400000
+7 2002-12-31  39.385522  1041292800000
+8 2003-01-31  39.034500  1043971200000
+9 2003-02-28  42.010801  1046390400000
+
+Data statistics:
+count    238.000000
+mean     -77.813574
+std       77.572968
+min     -196.658427
+25%     -158.507082
+50%      -92.291263
+75%       -2.226474
+max       47.999815
+Name: twsa_cm, dtype: float64
+
+============================================================
+LINEAR REGRESSION ANALYSIS
+============================================================
+Slope: -0.03122447 cm/day
+Intercept: 48.3950 cm
+R-squared: 0.9874
+P-value: 3.864763e-226
+Standard Error: 0.00022966
+
+Trend: -11.4047 cm/year
+
+============================================================
+ICE MASS LOSS CALCULATION
+============================================================
+Water equivalent thickness change: -11.4047 cm/year
+Volume change: -2.43e+11 m³/year
+Mass change: -243.22 gigatons/year
+Mass change: -243.2173 Gt/year (precise)
+
+❄️ Greenland is LOSING approximately 243.22 gigatons of ice per year
+
+Total mass change over 22.49 years: -5470.97 Gt
+Average annual loss: -243.22 Gt/year
+
+95% Confidence Interval: ±3.51 Gt/year
+Ice mass loss rate: -243.22 ± 3.51 Gt/year
+
+============================================================
+COMPARISON WITH LITERATURE VALUES
+============================================================
+
+Literature values for Greenland ice mass loss:
+
+Velicogna et al. (2014) - GRACE               | 2002-2011       |   -280 ± ±58 Gt/year
+Shepherd et al. (2020) - Ice Sheet Mass Balance | 1992-2018       | ~  -200 Gt/year
+Mouginot et al. (2019)                        | 1972-2018       | ~  -268 Gt/year
+IMBIE Team (2020)                             | 1992-2018       |   -200 ± ±32 Gt/year
+Sasgen et al. (2020) - GRACE                  | 2002-2019       |   -267 ± ±16 Gt/year
+Recent estimates (2010s)                      | 2010-2019       |   -280 ± ±30 Gt/year
+
+Your GRACE analysis result:                   | 2002-2024 | -243.22 ± 3.51 Gt/year
+
+============================================================
+INTERPRETATION
+============================================================
+Your result: -243.22 ± 3.51 Gt/year
+Literature range: approximately -200 to -300 Gt/year
+Difference from typical value (-250 Gt/year): 2.7%
+
+✅ Your results AGREE WELL with published literature values!
+   The ice loss rate falls within the expected range for GRACE measurements.
+
+============================================================
+ANNUAL STATISTICS
+============================================================
+ year   mean_twsa    min_twsa    max_twsa  std_twsa  count  mass_change_gt  cumulative_loss_gt
+ 2002   39.092016   34.748781   47.999815  4.909750      8        0.000000            0.000000
+ 2003   34.830484   28.737191   44.095275  6.386775     11      -90.881349          -90.881349
+ 2004   25.793353   19.116484   33.047060  5.339226     12     -283.607046         -283.607046
+ 2005   16.386763    7.797668   26.432204  7.833606     12     -484.211808         -484.211808
+ 2006    5.390159   -1.553239   12.609017  6.071130     12     -718.725183         -718.725183
+ 2007   -6.639894  -16.631902    2.256462  8.090846     12     -975.277869         -975.277869
+ 2008  -17.983701  -27.617408   -9.706617  6.872088     12    -1217.195706        -1217.195706
+ 2009  -28.211522  -36.810771  -20.083150  7.004782     12    -1435.314023        -1435.314023
+ 2010  -44.061935  -56.607121  -31.747409 11.142286     11    -1773.339652        -1773.339652
+ 2011  -64.989827  -74.689656  -53.317515  9.550180     11    -2219.647486        -2219.647486
+ 2012  -83.726249  -98.397406  -68.811026 12.818642     10    -2619.220086        -2619.220086
+ 2013  -96.196329  -99.601444  -91.830945  3.029397      9    -2885.156778        -2885.156778
+ 2014 -103.070074 -110.858390  -95.463733  7.531138      8    -3031.746136        -3031.746136
+ 2015 -110.237323 -119.750450 -104.224926  6.412366      9    -3184.594769        -3184.594769
+ 2016 -120.326536 -132.315339 -113.900546  7.409616      9    -3399.757145        -3399.757145
+ 2017 -126.227148 -127.344037 -125.131331  0.900698      5    -3525.593477        -3525.593477
+ 2018 -133.371921 -137.664282 -127.956565  3.833278      6    -3677.962792        -3677.962792
+ 2019 -148.627679 -161.683025 -134.333868 11.829225     12    -4003.306801        -4003.306801
+ 2020 -164.503068 -170.730732 -158.341279  4.561784     12    -4341.865053        -4341.865053
+ 2021 -171.778873 -178.835906 -165.190914  5.451004     12    -4497.028743        -4497.028743
+ 2022 -178.242489 -184.763944 -173.072801  4.477020     12    -4634.871700        -4634.871700
+ 2023 -186.386568 -193.694627 -178.812890  6.004669     12    -4808.552175        -4808.552175
+ 2024 -191.584262 -196.658427 -187.865754  3.680272      9    -4919.398104        -4919.398104
+
+Year with maximum ice loss: 2024 (-191.58 cm)
+
+============================================================
+FINAL SUMMARY - GREENLAND ICE SHEET MASS LOSS
+============================================================
+
+📊 STUDY PERIOD: 2002-04-03 to 2024-09-30 (22.49 years)
+
+❄️ ICE MASS LOSS RATE:
+   243.22 ± 3.51 gigatons per year
+   (11.4047 cm water equivalent per year)
+
+📉 TOTAL CUMULATIVE LOSS:
+   5471 gigatons over 22.49 years
+
+📈 STATISTICAL SIGNIFICANCE:
+   R² = 0.9874 (trend explains 98.7% of variance)
+   p-value < 3.86e-226 (highly significant)
+
+📚 COMPARISON WITH LITERATURE:
+   Literature range: -200 to -300 Gt/year (typical)
+   Your result: -243.22 Gt/year
+   ✅ EXCELLENT AGREEMENT with published values!
+
+🌍 CONTEXT:
+   Greenland contains enough ice to raise global sea level by ~7.4 meters
+   Current loss rate contributes ~0.68 mm/year to sea level rise
+   (1 Gt of ice loss ≈ 0.0028 mm global sea level rise)
